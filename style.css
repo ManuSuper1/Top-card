@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    min-height: 100vh;
+    background-image: url('c:/Users/young/Desktop/img/Montain wallpaper.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.wrapper{
+    height: 60px;
+    width: 65vw;
+    line-height: 60px;
+    background: #050303;
+    border-radius: 70px;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.25);
+}
+.wrapper nav{
+    position: relative;
+    display: flex;
+}
+.wrapper nav label{
+    z-index: 1;
+    flex: 1;
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+}
+.wrapper nav label a{
+    position: relative;
+    z-index: -1;
+    color: #fff;
+    font-family: roboto;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.5s ease;
+}
+.wrapper nav #home:checked ~ label.home a,
+.wrapper nav #contact:checked ~ label.contact a,
+.wrapper nav #gallery:checked ~ label.gallery a,
+.wrapper nav #about:checked ~ label.about a{
+    color: #241ba6;
+}
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+.card{
+    width: 315px;
+    background-color: #e2e2e2;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.4);
+    margin: 40px;
+}
+
